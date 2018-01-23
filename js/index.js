@@ -9,7 +9,7 @@
       html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
       html += '<li class="currently">'+weather.currently+'</li>';
       html += '<li>'+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</li></ul>';
-  
+
       $("#weather").html(html);
     },
     error: function(error) {
@@ -61,11 +61,11 @@ function getTimeOfDayContent() {
         document.getElementById('greeting').innerHTML = "Good Morning, Alex";
         document.getElementById('app').style.backgroundImage = "url('https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb')";
       }
-      if (12 <= currentTime&&currentTime < 16) {
+      if (12 <= currentTime&&currentTime < 17) {
         document.getElementById('greeting').innerHTML = "Good Afternoon, Alex";
         document.getElementById('app').style.backgroundImage = "url('https://images.pexels.com/photos/698333/pexels-photo-698333.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb')";
       }
-      if (16 <= currentTime&&currentTime <= 24) {
+      if (17 <= currentTime&&currentTime <= 24) {
         document.getElementById('greeting').innerHTML = "Good Evening, Alex";
         document.getElementById('app').style.backgroundImage = "url('https://images.pexels.com/photos/141645/nature-stars-night-sky-141645.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb')";
       }
